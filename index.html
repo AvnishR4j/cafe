@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Urban Brew Café – A premium, locally sourced café in the heart of the city. Explore our artisan menu, sustainable space, and community-first ethos." />
+  <meta name="theme-color" content="#0d0b09" />
+  <title>Urban Brew Café | Artisan Coffee &amp; Community</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts: Cinzel (headings) + Cormorant Garamond (subheadings) + DM Sans (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="site-header" role="banner">
+    <nav class="nav-container" aria-label="Primary Navigation">
+      <a href="#hero" class="nav-logo" aria-label="Urban Brew Café – Home">
+        <span class="logo-icon" aria-hidden="true">☕</span>
+        <span class="logo-text">Urban Brew</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">Our Story</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#why-us" class="nav-link">Values</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#menu" class="btn btn-nav">View Menu</a>
+
+      <!-- Mobile Hamburger -->
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile Navigation" hidden>
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="#about" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+        <li><a href="#why-us" class="mobile-nav-link">Values</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Reviews</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <a href="#menu" class="btn btn-primary mobile-cta">View Menu</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section
+      class="hero"
+      id="hero"
+      aria-label="Hero – Welcome to Urban Brew Café"
+    >
+      <!-- Parallax BG -->
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1920&q=85"
+          alt=""
+          class="hero-bg-img"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal-up">Est. 2018 · Mumbai</p>
+        <h1 class="hero-title reveal-up">
+          Where Every Cup<br />
+          <em>Tells a Story</em>
+        </h1>
+        <p class="hero-subtitle reveal-up">
+          Artisan coffee, locally sourced ingredients,<br class="hide-mobile" />
+          and a space that feels like home.
+        </p>
+        <div class="hero-cta-group reveal-up">
+          <a href="#menu" class="btn btn-primary btn-glow">
+            <span>Explore Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#about" class="btn btn-ghost">Our Story</a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-label">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MARQUEE STRIP
+    ============================================================ -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Freshly Roasted</span>
+        <span class="dot">✦</span>
+        <span>Locally Sourced</span>
+        <span class="dot">✦</span>
+        <span>Sustainably Crafted</span>
+        <span class="dot">✦</span>
+        <span>Community First</span>
+        <span class="dot">✦</span>
+        <span>Zero Waste Ethos</span>
+        <span class="dot">✦</span>
+        <span>Small Batch Brews</span>
+        <span class="dot">✦</span>
+        <span>Freshly Roasted</span>
+        <span class="dot">✦</span>
+        <span>Locally Sourced</span>
+        <span class="dot">✦</span>
+        <span>Sustainably Crafted</span>
+        <span class="dot">✦</span>
+        <span>Community First</span>
+        <span class="dot">✦</span>
+        <span>Zero Waste Ethos</span>
+        <span class="dot">✦</span>
+        <span>Small Batch Brews</span>
+        <span class="dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         ABOUT SECTION
+    ============================================================ -->
+    <section class="about section-padding" id="about" aria-label="About Urban Brew Café">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Image Column -->
+          <div class="about-image-wrapper reveal-left">
+            <div class="about-image-frame">
+              <img
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=85"
+                alt="The warm interior of Urban Brew Café with exposed brick and wooden shelves"
+                class="about-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-badge reveal-scale">
+              <span class="badge-number">6</span>
+              <span class="badge-text">Years of<br/>Craft</span>
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="about-content reveal-right">
+            <p class="section-eyebrow">Our Story</p>
+            <h2 class="section-title">
+              Born from a Love<br />of <em>Good Coffee</em>
+            </h2>
+            <p class="about-body">
+              Urban Brew Café started as a modest corner stall in 2018, fuelled by an obsession with the perfect espresso and a deep belief that a café should be more than just a place to grab a drink — it should be a <strong>community anchor</strong>.
+            </p>
+            <p class="about-body">
+              Every bean we use is sourced directly from small, family-run farms across India, Ethiopia, and Colombia. We visit our suppliers, know their names, and pay fair prices. From soil to cup, we believe in a chain of care that you can taste.
+            </p>
+            <p class="about-body">
+              Our space was designed with sustainability at its core: reclaimed wood, energy-efficient lighting, compostable packaging, and a zero-single-use-plastic policy. Because a great cup of coffee shouldn't cost the earth.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">12+</span>
+                <span class="stat-label">Farm Partners</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Organic Milk</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">0</span>
+                <span class="stat-label">Single-Use Plastic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MENU SECTION
+    ============================================================ -->
+    <section class="menu section-padding" id="menu" aria-label="Our Menu">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">The Menu</p>
+          <h2 class="section-title">Crafted with Intention</h2>
+          <p class="section-desc">
+            From single-origin pour-overs to seasonal small plates — every item is made fresh, in-house, daily.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="menu-tabs reveal-up" role="tablist" aria-label="Menu Categories">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="coffee">Coffee</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="food">Food</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-filter="cold">Cold Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+
+          <!-- Card 1 -->
+          <article class="menu-card reveal-up" data-category="coffee" aria-label="Signature Espresso">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=600&q=80"
+                alt="A rich, crema-topped espresso in a white ceramic cup"
+                loading="lazy"
+              />
+              <span class="card-badge">Best Seller</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Coffee</span>
+                <span class="card-price">₹180</span>
+              </div>
+              <h3 class="card-title">Signature Espresso</h3>
+              <p class="card-desc">Our house blend of Ethiopian Yirgacheffe and Colombian Huila — bright, chocolate-forward, with a lingering caramel finish.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="menu-card reveal-up" data-category="coffee" aria-label="Pour-Over Single Origin">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80"
+                alt="Barista carefully pouring hot water over a pour-over coffee dripper"
+                loading="lazy"
+              />
+              <span class="card-badge card-badge--special">Seasonal</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Coffee</span>
+                <span class="card-price">₹320</span>
+              </div>
+              <h3 class="card-title">Single Origin Pour-Over</h3>
+              <p class="card-desc">A rotating, small-batch single origin brewed to order via V60. Ask our barista about this week's featured farm.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="menu-card reveal-up" data-category="cold" aria-label="Cold Brew Reserve">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80"
+                alt="A tall glass of dark cold brew coffee over ice"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Cold Drinks</span>
+                <span class="card-price">₹260</span>
+              </div>
+              <h3 class="card-title">Cold Brew Reserve</h3>
+              <p class="card-desc">Steeped for 18 hours in filtered water. Silky smooth, naturally sweet, with zero bitterness. Served over crystal-clear ice.</p>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="menu-card reveal-up" data-category="food" aria-label="Avocado Sourdough Toast">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=600&q=80"
+                alt="Thick-cut sourdough toast topped with smashed avocado and chilli flakes"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Food</span>
+                <span class="card-price">₹380</span>
+              </div>
+              <h3 class="card-title">Avocado Sourdough</h3>
+              <p class="card-desc">House-baked sourdough, smashed local avocado, pickled red onion, dukkah, and a drizzle of extra virgin olive oil.</p>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="menu-card reveal-up" data-category="food" aria-label="Cardamom Banana Loaf">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
+                alt="Sliced banana loaf with a golden crumb on a wooden board"
+                loading="lazy"
+              />
+              <span class="card-badge">House Baked</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Food</span>
+                <span class="card-price">₹220</span>
+              </div>
+              <h3 class="card-title">Cardamom Banana Loaf</h3>
+              <p class="card-desc">Our legendary in-house loaf with Nendran bananas, ground cardamom, and a palm jaggery glaze. Gluten-free option available.</p>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="menu-card reveal-up" data-category="cold" aria-label="Rose & Cardamom Latte">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80"
+                alt="A creamy iced latte with a rose and cardamom swirl in a clear glass"
+                loading="lazy"
+              />
+              <span class="card-badge card-badge--special">Signature</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Cold Drinks</span>
+                <span class="card-price">₹290</span>
+              </div>
+              <h3 class="card-title">Rose &amp; Cardamom Latte</h3>
+              <p class="card-desc">A house-made rose and cardamom syrup swirled through iced oat milk and a double shot of espresso. Floral, spiced, unforgettable.</p>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="menu-card reveal-up" data-category="coffee" aria-label="Oat Milk Cortado">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80"
+                alt="A small glass of cortado with latte art on top"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Coffee</span>
+                <span class="card-price">₹210</span>
+              </div>
+              <h3 class="card-title">Oat Milk Cortado</h3>
+              <p class="card-desc">Equal parts ristretto and steamed oat milk. The purist's choice — intense, velvety, and naturally sweet without masking the origin notes.</p>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="menu-card reveal-up" data-category="food" aria-label="Shakshuka Brioche Bowl">
+            <div class="card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1561043433-9265f73e203e?auto=format&fit=crop&w=600&q=80"
+                alt="A cast-iron skillet of shakshuka with poached eggs and crusty bread"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Food</span>
+                <span class="card-price">₹440</span>
+              </div>
+              <h3 class="card-title">Shakshuka Brioche Bowl</h3>
+              <p class="card-desc">Slow-cooked spiced tomato and pepper sauce, two farm-fresh poached eggs, feta crumble, and a toasted butter brioche on the side.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY CHOOSE US
+    ============================================================ -->
+    <section class="why-us section-padding" id="why-us" aria-label="Why Choose Urban Brew Café">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Our Values</p>
+          <h2 class="section-title">More Than Just Coffee</h2>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature-card reveal-up" aria-label="Locally Sourced">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="feature-title">Locally Sourced</h3>
+            <p class="feature-desc">Every ingredient is traced to its source. We partner directly with 12+ small farms, paying above fair-trade prices and visiting each partner annually.</p>
+          </article>
+
+          <article class="feature-card reveal-up" aria-label="Eco-Friendly Space">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 22l10-10M16 8l-4 4M22 2s-5 0-8 3-5 8-5 8 5 0 8-3 5-8 5-8z"/></svg>
+            </div>
+            <h3 class="feature-title">Eco-Friendly Space</h3>
+            <p class="feature-desc">Reclaimed timber furniture, LED lighting, rainwater harvesting, and a fully compostable packaging system. Our carbon footprint shrinks every year.</p>
+          </article>
+
+          <article class="feature-card reveal-up" aria-label="Freshly Roasted In-House">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3 class="feature-title">Freshly Roasted</h3>
+            <p class="feature-desc">Our in-house roastery produces small-batch roasts twice weekly. No stale warehouse stock — just beans roasted days ago, at peak flavour.</p>
+          </article>
+
+          <article class="feature-card reveal-up" aria-label="Community First">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="feature-title">Community First</h3>
+            <p class="feature-desc">Monthly open mics, free workspace for freelancers on Tuesdays, and a 'pay-it-forward' wall where customers can buy a coffee for someone in need.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS
+    ============================================================ -->
+    <section class="testimonials section-padding" id="testimonials" aria-label="Customer Testimonials">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Testimonials</p>
+          <h2 class="section-title">Heard in Our Café</h2>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <blockquote class="testimonial-card reveal-up" aria-label="Review by Priya S.">
+            <div class="stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-text">
+              "Urban Brew isn't just a café — it's my second living room. The cortado is the best I've had outside of Barcelona, and the cardamom loaf is something I genuinely dream about. The atmosphere has this rare warmth that bigger chains simply can't manufacture."
+            </p>
+            <footer class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80"
+                alt="Portrait of Priya S."
+                loading="lazy"
+              />
+              <div>
+                <cite class="author-name">Priya S.</cite>
+                <span class="author-title">Graphic Designer, Mumbai</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-up" aria-label="Review by Arjun M.">
+            <div class="stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-text">
+              "I've been a regular for three years. What keeps me coming back isn't just the excellent coffee — it's the fact that the staff knows my order, the music is always right, and I know every rupee I spend supports local farmers. That matters to me enormously."
+            </p>
+            <footer class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80"
+                alt="Portrait of Arjun M."
+                loading="lazy"
+              />
+              <div>
+                <cite class="author-name">Arjun M.</cite>
+                <span class="author-title">Startup Founder, Bangalore</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-up" aria-label="Review by Leila K.">
+            <div class="stars" aria-label="5 out of 5 stars" role="img">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p class="testimonial-text">
+              "As a food critic, I've visited hundreds of cafés across India. Urban Brew stands apart because they've refused to compromise on a single detail — the sourcing, the training, the interiors, the menu. This is what a modern Indian café should look like."
+            </p>
+            <footer class="testimonial-author">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80"
+                alt="Portrait of Leila K."
+                loading="lazy"
+              />
+              <div>
+                <cite class="author-name">Leila K.</cite>
+                <span class="author-title">Food Critic &amp; Writer</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="contact section-padding" id="contact" aria-label="Contact Urban Brew Café">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Visit Us</p>
+          <h2 class="section-title">Come Say Hello</h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Info Column -->
+          <div class="contact-info reveal-left">
+            <div class="info-block">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3 class="info-label">Address</h3>
+                <p class="info-text">42, Bandra West,<br/>Mumbai – 400050, Maharashtra</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h3 class="info-label">Phone</h3>
+                <a href="tel:+912222334455" class="info-link">+91 22 2233 4455</a>
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h3 class="info-label">Email</h3>
+                <a href="mailto:hello@urbanbrewcafe.in" class="info-link">hello@urbanbrewcafe.in</a>
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h3 class="info-label">Hours</h3>
+                <p class="info-text">Mon–Fri: 7:00am – 9:00pm<br/>Sat–Sun: 8:00am – 10:00pm</p>
+              </div>
+            </div>
+
+            <!-- Google Map Embed -->
+            <div class="map-embed reveal-up" aria-label="Google Map showing Urban Brew Café location in Bandra West, Mumbai">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.584!2d72.8296!3d19.0596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b888ae67fd%3A0x21fcb85fc2908da5!2sBandra%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                width="100%"
+                height="240"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Urban Brew Café on Google Maps"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-wrapper reveal-right">
+            <form class="contact-form" novalidate aria-label="Contact Form">
+              <h3 class="form-title">Send Us a Message</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Priya Sharma"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="priya@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="Event booking, collaboration, feedback…"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  rows="5"
+                  placeholder="Tell us what's on your mind…"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo" aria-label="Urban Brew Café – Back to top">
+            <span aria-hidden="true">☕</span> Urban Brew
+          </a>
+          <p class="footer-tagline">Where every cup tells a story. Rooted in community, committed to the earth.</p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="#" class="social-link" aria-label="Instagram" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter / X" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer-nav" aria-label="Footer Quick Links">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul role="list">
+            <li><a href="#about" class="footer-link">Our Story</a></li>
+            <li><a href="#menu" class="footer-link">Menu</a></li>
+            <li><a href="#why-us" class="footer-link">Values</a></li>
+            <li><a href="#testimonials" class="footer-link">Reviews</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hours -->
+        <div class="footer-hours">
+          <h4 class="footer-nav-title">Opening Hours</h4>
+          <ul role="list" class="hours-list">
+            <li><span>Mon – Fri</span><span>7:00 – 21:00</span></li>
+            <li><span>Saturday</span><span>8:00 – 22:00</span></li>
+            <li><span>Sunday</span><span>8:00 – 22:00</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Urban Brew Café. All rights reserved.</p>
+        <p>Designed &amp; built with ♥ for real craft and real community.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
